@@ -29,7 +29,6 @@ const CalculatorButton = ({label, color, blackText = false, doubleSize= false}:P
         }}
     >
       <Text 
-        adjustsFontSizeToFit
         style={{
             ...globalStyles.buttonText,
             color: blackText ? 'black' : 'white'
