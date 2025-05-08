@@ -1,4 +1,6 @@
+import CalculatorButton from '@/components/CalculatorButton'
 import CustomText from '@/components/CustomText'
+import { Colors } from '@/constants/Colors'
 import { globalStyles } from '@/styles/global-styles'
 import React from 'react'
 import { View } from 'react-native'
@@ -15,8 +17,40 @@ const CalculatorApp = () => {
       </View>
 
     {/* botones */}
-    
-
+    <View style={globalStyles.row}>
+      <CalculatorButton label='C' blackText = {true} color={Colors.lightGray}/>    
+      <CalculatorButton label='+/-' blackText = {true} color={Colors.lightGray}/>    
+      <CalculatorButton label='del' blackText = {true} color={Colors.lightGray}/>    
+      <CalculatorButton label='/' color={Colors.orange}/>    
+      
+    </View>
+    <View style={globalStyles.row}>
+      <CalculatorButton label='7' color={Colors.darkGrey}/>    
+      <CalculatorButton label='8' color={Colors.darkGrey}/>    
+      <CalculatorButton label='9' color={Colors.darkGrey}/>    
+      <CalculatorButton label='X' color={Colors.orange}/>    
+      
+    </View>
+    <View style={globalStyles.row}>
+      <CalculatorButton label='4' color={Colors.darkGrey}/>    
+      <CalculatorButton label='5' color={Colors.darkGrey}/>    
+      <CalculatorButton label='6' color={Colors.darkGrey}/>    
+      <CalculatorButton label='-' color={Colors.orange}/>    
+      
+    </View>
+    <View style={globalStyles.row}>
+      <CalculatorButton label='1' color={Colors.darkGrey}/>    
+      <CalculatorButton label='2' color={Colors.darkGrey}/>    
+      <CalculatorButton label='3' color={Colors.darkGrey}/>    
+      <CalculatorButton label='=' color={Colors.orange}/>    
+      
+    </View>
+    <View style={globalStyles.row}>
+      <CalculatorButton label='0' doubleSize={true} color={Colors.darkGrey}/>    
+      <CalculatorButton label='.' color={Colors.darkGrey}/>      
+      <CalculatorButton label='=' color={Colors.orange}/>    
+      
+    </View>
 
 
     </View>
