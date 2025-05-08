@@ -36,7 +36,8 @@ export const globalStyles = StyleSheet.create({
         flexDirection: 'row',
         justifyContent: 'center',
         marginBottom: 18,
-        paddingHorizontal: 10
+        paddingHorizontal: 30,
+        marginHorizontal: 20
     },
 
     button: {
