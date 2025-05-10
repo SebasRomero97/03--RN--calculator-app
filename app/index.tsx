@@ -18,7 +18,7 @@ const CalculatorApp = () => {
       <View style={{paddingHorizontal: 30, marginBottom: 20}}>
         <CustomText variant='h1'>{formula}</CustomText>
 
-        {prevNumber !== number
+        {prevNumber !== formula
           ?<CustomText variant='h2' >{prevNumber}</CustomText>
           :<CustomText variant='h2' > </CustomText>
         }
