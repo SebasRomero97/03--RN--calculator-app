@@ -11,11 +11,11 @@ interface Props {
     doubleSize?: boolean
 
     // Metodos
-    onPress?: () => void
+    onPress: () => void
 
 }
 
-const CalculatorButton = ({label, color, blackText = false, doubleSize= false}:Props) => {
+const CalculatorButton = ({label, onPress, color, blackText = false, doubleSize= false}:Props) => {
   return (
     <Pressable 
         style={({pressed}) => ({
@@ -26,9 +26,12 @@ const CalculatorButton = ({label, color, blackText = false, doubleSize= false}:P
         })}
         onPress={() => {
           Haptics.selectionAsync()
+          onPress()
         }}
     >
       <Text 
+        adjustsFontSizeToFit
+        numberOfLines={1}
         style={{
             ...globalStyles.buttonText,
             color: blackText ? 'black' : 'white'
