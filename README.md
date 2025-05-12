@@ -1,3 +1,71 @@
+# Calculadora React Native
+
+Esta es una aplicación de calculadora básica desarrollada con **React Native**. Permite realizar operaciones matemáticas simples como suma, resta, multiplicación y división.
+
+## 🚀 Tecnologías utilizadas
+
+- React Native
+- Expo
+- JavaScript
+- Hooks (useState, useEffect, useRef)
+
+## 📱 Funcionalidades
+
+- Interfaz de usuario simple y amigable
+- Botones numéricos y de operaciones
+- Evaluación de expresiones matemáticas
+- Mostrar resultado parcial a medida que se escribe
+
+## 🖼️ Capturas de pantalla
+
+(Agregar aquí si querés imágenes del simulador)
+
+## ⚙️ Instalación y ejecución
+
+1. Clonar el repositorio:
+
+```bash
+git clone https://github.com/tuusuario/tu-repo.git
+```
+
+2. Instalar dependencias:
+
+```bash
+npm install
+```
+
+3. Iniciar la aplicación con Expo:
+
+```bash
+npx expo start
+```
+
+Escaneá el código QR con la app de Expo Go en tu celular para probarla.
+
+## 📂 Estructura del proyecto
+
+```
+/calculadora-app
+│
+├── App.js
+├── components/
+│   └── Button.js
+├── assets/
+├── node_modules/
+└── README.md
+```
+
+## 🧠 Aprendizajes
+
+- Manejo de estado con `useState`
+- Reacciones a cambios con `useEffect`
+- Optimización del render con `useRef`
+- Lógica para interpretación de fórmulas
+
+## 📄 Licencia
+
+Este proyecto está bajo la licencia MIT.
+
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
